@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
-public class Arctic {
+class Arctic {
 	// 기지마다 무전기를 설치하고 본부에서 간접적으로 모든 무전기에 연락 가능한 무전기의 출력범위 구하기
 	// 모든 두 점사이의 거리 도출
 	public static double[][] iMap;
