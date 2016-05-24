@@ -77,5 +77,24 @@ public class Functions {
                 return false;
         return true;
     }
-    
+    	// 포맷대로 출력
+	private static void getFormatedNumber(){
+		String s = "하하하";     // 문자열
+	    char c = '가';           // 유니코드 문자 1개
+	    int i = -255;             // 부호 있는 정수
+	    
+//	    %s : 문자열
+//	    %c : 문자 1개
+//	    %d : +-부호 있는 정수
+//	    %u : +-부호 없는 정수
+//	    %f : 실수
+//	    %0.3f : 실수 (소수점 3자리까지 나오게)
+//	    %X : 16진수 대문자로
+//	    %x : 16진수 소문자로
+//	    %02X : 16진수 대문자로. 2자리 헥사에서, 앞의 빈 칸 있으면 0으로 채움
+		System.out.format("%s %d %c %f %X %x %02X%n", s, i, c, (float) i, i, i, 10);
+//		System.out.printf("%.3f", 0.220);
+		System.out.printf("%.3f", 0.2258);
+
+	}
 }
