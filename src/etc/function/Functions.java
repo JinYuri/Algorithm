@@ -97,4 +97,12 @@ public class Functions {
 		System.out.printf("%.3f", 0.2258);
 
 	}
+	
+	// 조합 Combination
+	// http://gorakgarak.tistory.com/523 (모든 조합 출력까지)
+	public int combination(int n, int r) {
+		if(n == r || r == 0) return 1;
+		else return combination(n - 1, r - 1) + combination(n - 1, r);
+		
+	}
 }
